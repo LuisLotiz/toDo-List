@@ -23,8 +23,8 @@ function App() {
   };
 
   return (
-    <div className="m-auto p-3 w-25 m-0 border-0 bd-example m-0 border-0">
-      <ul className="list-group">
+    <div className="m-auto p-3 w-25 m-0 border-0 bd-example m-0 border-0 principal">
+      <ul className="list-group ">
         <input
           placeholder="Add ToDo"
           value={newTodo}
@@ -41,9 +41,9 @@ function App() {
           return (
             <li
               key={index}
-              className="d-flex justify-content-between list-group-item"
+              className="d-flex justify-content-between list-group-item lista"
             >
-              {todo}
+              {todo}{" "}
               <i
                 onClick={() => deleteTodo(index)}
                 className="text-secondary bi bi-trash"
@@ -51,7 +51,7 @@ function App() {
             </li>
           );
         })}
-        <li className="list-group-item">{todos.length} item left</li>
+        <li className="list-group-item font">{todos.length} item left</li>
       </ul>
     </div>
   );

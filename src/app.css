@@ -1,0 +1,18 @@
+.font {
+    font-size: 10px;
+}
+
+.bi-trash {
+    display: none;
+}
+
+.lista:hover .bi-trash {
+  display: inline;
+  color: red;
+}
+
+.list-group-item {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
